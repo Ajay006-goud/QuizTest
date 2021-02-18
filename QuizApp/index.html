@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz website</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<style>
+ body
+ {
+ 	background-color: lightblue;
+ }
+ h1{
+ 	
+   padding:2%; 
+   text-align:center; 
+   color:white;
+ }
+ .card{
+ 	font-size:1.2rem;
+ 	box-shadow: 0 1rem 1rem -0.7rem rgba(0 ,0 , 0 , 0.4);
+
+ }
+
+
+ input{
+ 	cursor: pointer;
+ }
+ .card-body li
+ {
+ 	list-style: none;
+ 	
+ }
+
+#submit 
+{
+	outline:none;
+	background-color:lightgreen;
+	font-size:20px;
+	border-radius:4px;
+	display: block;
+	margin: auto;
+	border:none;
+	
+	color: white;
+	margin-top:3rem;
+}
+#submit:hover
+{
+	background-color: #0984e3;
+}
+#showScore
+{
+	background-color:#dfe6e9;
+	margin-top: 1rem;
+	padding: 1rem 2rem;
+	box-shadow: 0 1rem 1rem -0.7rem rgba(0 ,0 , 0 , 0.4);
+	text-align: center;
+	
+}
+#showScore h3{
+   text-align: center;
+   font-size: 30px;
+
+}
+#showScore .btn
+{
+	text-align: center;
+	background-color: #55efc4;
+   border: none;
+
+}
+
+#showScore .btn:hover
+{
+	background-color:orange;
+ }
+.showArea
+{
+display: none;
+  }
+</style>
+
+
+</head>
+<body>
+<h1>
+	Quez Test
+</h1>
+<div class="card w-50 m-auto">
+	  <div class="card-body">
+		<h2 class="question ">Question comes here</h2>
+		<ul>
+			<li>
+				<input type="radio" name="answer" id="ans1" class="answer">
+				<label for="ans1" id="option1">Answer question</label>
+			</li>
+			<li>
+				<input type="radio" name="answer" id="ans2" class="answer">
+				<label for="ans2" id="option2">Answer question</label>
+			</li>
+			<li>
+				<input type="radio" name="answer" id="ans3" class="answer">
+				<label for="ans3" id="option3">Answer question</label>
+			</li>
+			<li>
+				<input type="radio" name="answer" id="ans4" class="answer">
+				<label for="ans4" id="option4">Answer question</label>
+			</li>
+
+		</ul>
+		
+		<button id="submit">submit</button>
+	
+		<div id="showScore" class="showArea"></div>
+	</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
